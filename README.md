@@ -27,8 +27,10 @@ nvm alias default 8.12.0  # set this version as default version
 
 # view current status
 ```bash
-nvm current      # view current version
-nvm which 8.12.0 # view path of the binary nodejs
+nvm current       # view current version
+nvm which 8.12.0  # view path of the binary nodejs
+nvm which current # view path of current nodejs version
+
 ```
 
 # misc
