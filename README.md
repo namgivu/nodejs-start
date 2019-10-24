@@ -16,7 +16,7 @@ node --version; which node
 npm  --version; which npm
 
 # install :yarn under current :node ref. https://stackoverflow.com/a/53094675/248616 
-npm install -g yarn
+npm install -g yarn  # g aka global
 
 # create empty package.json
 yarn init -y
