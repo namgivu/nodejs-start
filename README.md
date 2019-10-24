@@ -38,3 +38,13 @@ run it
 ```bash
 yarn start
 ```
+
+call endpoint as api been run
+httpie is required
+```bash
+http :3000/health
+
+http :3000/hello
+http :3000/hello/
+http :3000/hello/nn
+```
