@@ -12,6 +12,11 @@ app.listen(port);
 
 // register the route(s)
 app.route('/health').get(health.on_get);
+
+app.route('/hello'      ).get(hello.on_get);
+app.route('/hello/'     ).get(hello.on_get);
 app.route('/hello/:name').get(hello.on_get);
 
+
+// print ready
 console.log(`api server started at port=${port}`);
