@@ -1,3 +1,8 @@
+#intro 
+api app via nodejs 
+ref. https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
+
+
 # install nvm node npm yarn
 require nvm ref. bit.ly/361kgIF
 
@@ -18,8 +23,6 @@ yarn init -y
 yarn install
 ```
 
-# api app via nodejs 
-ref. https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
 
 ## install packages
 `express` to create the server 
@@ -36,10 +39,24 @@ add task `start` to package.json
 
 run it
 ```bash
-yarn start
+yarn start  # ctrl-c to stop
+
+# aka
+./bin/run-api.sh  # ctrl-c to stop
 ```
 
-call endpoint as api been run
+
+## api run
+```bash
+# install package
+yarn install
+
+# run api
+./bin/run-api.sh  # ctrl-c to stop
+```
+
+
+# call endpoint as api been run
 httpie is required
 ```bash
 http :3000/health
