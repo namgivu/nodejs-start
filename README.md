@@ -21,10 +21,20 @@ yarn install
 # api app via nodejs 
 ref. https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
 
+## install packages
 `express` to create the server 
 `nodmon`  to keep track of changes to files and automatically restart the server
  
 ```bash
 yarn add express
 yarn add nodemon
+```
+
+## api run 0th
+add blank api app in `server.js`
+add task `start` to package.json
+
+run it
+```bash
+yarn start
 ```
