@@ -1,6 +1,5 @@
+# install nvm node npm yarn
 require nvm ref. bit.ly/361kgIF
-
-nodejs api app ref. https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
 
 ```bash
 # install latest lts node+npm - lts aka long term support
@@ -13,4 +12,8 @@ npm  --version; which npm
 
 # install :yarn under current :node ref. https://stackoverflow.com/a/53094675/248616 
 npm install -g yarn
+
+# create empty package.json
+yarn init -y
+yarn install
 ```

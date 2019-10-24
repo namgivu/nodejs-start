@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-start",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:namgivu/nodejs-start.git",
+  "author": "namgivu <namgivu@gmail.com>",
+  "license": "MIT"
+}
