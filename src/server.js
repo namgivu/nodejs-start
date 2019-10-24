@@ -1,5 +1,7 @@
 const express = require('express');
+
 const health = require('./route/health');
+const hello  = require('./route/hello');
 
 
 let app = express();
@@ -10,5 +12,6 @@ app.listen(port);
 
 // register the route(s)
 app.route('/health').get(health.on_get);
+app.route('/hello/:name').get(hello.on_get);
 
 console.log(`api server started at port=${port}`);
