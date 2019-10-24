@@ -17,3 +17,10 @@ npm install -g yarn
 yarn init -y
 yarn install
 ```
+
+# api app via nodejs 
+ref. https://www.codementor.io/olatundegaruba/nodejs-restful-apis-in-10-minutes-q0sgsfhbd
+
+```bash
+yarn add express
+```
