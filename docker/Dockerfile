@@ -11,10 +11,10 @@ RUN apt-get install -y nodejs
 RUN npm install -g yarn
 
 
-# create THIS_APP folder
+# create & set THIS_APP folder
 WORKDIR /app
 
-# node_modules tag - change _b to new value to invalidate node_modules/ and force a rerun
+# invalidate-tag for node_modules/ ie update the tag to force a rerun from this step
 RUN echo 191020_b
 
 # install app packages
@@ -24,15 +24,14 @@ RUN rm -rf ./node_modules/
 RUN yarn install
 
 # bundle app source
-COPY . .
+COPY .         .
+#    APP_HOME  /app in container
 
-# for documentation on port
+# set api port to serve at
 EXPOSE 3000
 
-# default command when running container
 # serve as api app
-CMD cd /app; \
-    yarn start
+CMD yarn start
 
 # used when debug
 #CMD tail -F `mktemp`
