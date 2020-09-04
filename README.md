@@ -66,3 +66,8 @@ http :3000/hello/nn
 ```
 
 or can just go with pure curl or Postman 
+
+# api run/maintain sample command
+```bash
+./docker/build.sh && ./docker/run.sh
+    ./bin/healthcheck.sh
