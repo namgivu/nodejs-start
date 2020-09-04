@@ -30,7 +30,7 @@ COPY . .
 EXPOSE 3000
 
 # default command when running container
-# run the api
+# serve as api app
 CMD cd /app; \
     yarn start
 

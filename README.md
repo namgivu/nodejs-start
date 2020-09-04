@@ -33,7 +33,7 @@ yarn add nodemon
 ```
 
 # api run 0th
-add blank api app in `server.js`
+add blank api app in `api.js`
 add task `start` to package.json
 
 run it

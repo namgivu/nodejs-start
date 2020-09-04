@@ -6,4 +6,4 @@ AH=`cd "$SH/.." && pwd`  # AH aka APP_HOME
 if [[ -z $PORT ]]; then PORT=3000; fi
 
 cd $AH
-    PORT="$PORT" nodemon src/server.js
+    PORT="$PORT" nodemon src/api.js
