@@ -13,9 +13,9 @@ app.listen(port)
 //region register the route
 app.route('/health').get(health.on_get)
 
-app.route('/hello'      ).get(hello.on_get)
-app.route('/hello/'     ).get(hello.on_get)
-app.route('/hello/:name').get(hello_w_param.on_get)
+app.route('/hello'      ).get(hello.on_get)          // hello 00a
+app.route('/hello/'     ).get(hello.on_get)          // hello 00b
+app.route('/hello/:name').get(hello_w_param.on_get)  // hello 01  //TODO how to make 01 NOT override 00a 00b
 //endregion register the route
 
 
