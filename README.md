@@ -40,8 +40,8 @@ run it
 ```bash
 yarn start  # ctrl-c to stop
 
-# aka
-./bin/run-api.sh  # ctrl-c to stop
+# or with custom port 20904
+PORT=20904 yarn start
 ```
 
 
