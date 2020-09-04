@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-s=$BASH_SOURCE ; s=$(dirname "$s") ; s=$(cd "$s" && pwd) ; SCRIPT_HOME="$s"  # get SCRIPT_HOME=executed script's path, containing folder, cd & pwd to get container path
-a="$SCRIPT_HOME/.." ;                a=$(cd "$a" && pwd) ; APP_HOME="$a"
+SH=`cd $(dirname $BASH_SOURCE) && pwd`  # SH aka SCRIPT_HOME=executed script's path, containing folder
+AH=`cd "$SH/.." && pwd`  # AH aka APP_HOME
 
 if [[ -z $PORT ]]; then PORT=3000; fi
 
-cd "$APP_HOME"
+cd $AH
     PORT="$PORT" nodemon src/server.js
-cd --
