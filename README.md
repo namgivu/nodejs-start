@@ -63,6 +63,8 @@ http :3000/health
 http :3000/hello
 http :3000/hello/
 http :3000/hello/nn
+
+http :3000/groups
 ```
 
 or can just go with pure curl or Postman 
