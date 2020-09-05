@@ -24,8 +24,8 @@ AH=`cd "$SH/.." && pwd`  # AH aka APP_HOME
 View container log
     watch docker logs $CONTAINER_NAME  # api online when 'api server started at port=3000'
 Sample endpoint request
-    http :3000/hello
-    http :3000/hello/nn
-    curl localhost:3000/hello
-    curl localhost:3000/hello/nn
+    http :$PORT/hello
+    http :$PORT/hello/nn
+    curl localhost:$PORT/hello
+    curl localhost:$PORT/hello/nn
 "
