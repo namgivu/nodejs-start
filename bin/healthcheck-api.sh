@@ -18,6 +18,7 @@ AH=`cd "$SH/.." && pwd`  # AH aka APP_HOME
         echo 'ensure can call endpoint /hello'
             n=HEALTHCHECK ; curl "localhost:$PORT/hello/$n"  # n aka name
                 ec=$? && echo $ec; endpoint_hello=$ec
+
 echo "
 --- ---
 SUMMARY

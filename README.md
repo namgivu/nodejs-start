@@ -71,3 +71,10 @@ or can just go with pure curl or Postman
 ```bash
 ./docker/api/build.sh && ./docker/api/run.sh
     ./bin/healthcheck-api.sh
+```
+
+# db run/maintain sample command
+```bash
+./docker/db/up.sh
+    ./bin/healthcheck-db.sh
+```
