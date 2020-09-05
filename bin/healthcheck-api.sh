@@ -2,7 +2,7 @@
 SH=`cd $(dirname $BASH_SOURCE) && pwd`  # SH aka SCRIPT_HOME=executed script's path, containing folder
 AH=`cd "$SH/.." && pwd`  # AH aka APP_HOME
 
-    source "$AH/docker/.config.sh"
+    source "$AH/docker/api/.config.sh"
 
         echo '--- ---'
         echo 'ensure container is up by grepping the its log'

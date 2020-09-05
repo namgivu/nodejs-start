@@ -69,5 +69,5 @@ or can just go with pure curl or Postman
 
 # api run/maintain sample command
 ```bash
-./docker/build.sh && ./docker/run.sh
-    ./bin/healthcheck.sh
+./docker/api/build.sh && ./docker/api/run.sh
+    ./bin/healthcheck-api.sh
