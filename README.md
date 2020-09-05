@@ -50,13 +50,13 @@ PORT=20904 yarn start
 # install package
 yarn install
 
-# run api
+# run api locally
 ./bin/run-api.sh  # ctrl-c to stop
 ```
 
 
-# call endpoint as api been run
-httpie is required here
+# locally call endpoint as api been run
+curl/httpie is required here
 ```bash
 http :3000/health
 
